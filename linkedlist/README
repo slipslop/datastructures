@@ -1,3 +1,6 @@
 Doubly linked list
 
+Insertion O(1)
+Search worst case O(n)
+
 sudo docker run -it --rm -v ~/Desktop/datastructures/linkedlist:/app openjdk bash
