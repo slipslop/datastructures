@@ -13,4 +13,16 @@ public class LinkedList
 
         this.head = node;
     }
+
+    public Node search(int value)
+    {
+        Node res = this.head;
+
+        while (res != null && res.getValue() != value) {
+            res = res.getNext();
+        }
+
+        return res;
+    }
+
 }
