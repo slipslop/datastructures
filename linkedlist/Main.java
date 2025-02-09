@@ -3,8 +3,10 @@ public class Main {
         LinkedList a = new LinkedList();
         a.insert(10);
         a.insert(20);
-        System.out.println(a.head.getValue());
-        System.out.println(a.head.getPrevious());
-        System.out.println(a.head.getNext().getValue());
+        a.insert(5);
+        a.insert(22);
+
+        Node n = a.search(10);
+        System.out.println(n.getNext());
     }
 }
