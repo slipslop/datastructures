@@ -25,4 +25,15 @@ public class LinkedList
         return res;
     }
 
+    public void delete(Node node)
+    {
+        if (node.getPrevious() != null) {
+            node.getPrevious().setNext(node.getNext());
+        } else {
+            this.head = node.getNext();
+        }
+        if (node.getNext() != null) {
+            node.getNext().setPrevious(node.getPrevious());
+        }
+    }
 }
