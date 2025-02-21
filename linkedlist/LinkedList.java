@@ -36,4 +36,17 @@ public class LinkedList
             node.getNext().setPrevious(node.getPrevious());
         }
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        Node node = this.head;
+        while (node != null) {
+            sb.append(node.getValue());
+            if (node.getNext() != null) {
+                sb.append(" -> ");
+            }
+            node = node.getNext();
+        }
+        return sb.toString();
+    }
 }
