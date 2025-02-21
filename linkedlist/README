@@ -2,5 +2,6 @@ Doubly linked list
 
 Insertion O(1)
 Search worst case O(n)
+Deletion O(1), O(n) if searching is needed
 
 sudo docker run -it --rm -v ~/Desktop/datastructures/linkedlist:/app openjdk bash
